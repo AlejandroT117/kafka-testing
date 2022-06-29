@@ -24,11 +24,4 @@ const run = async () => {
   })
 }
 
-const consumePatientEvent = ()=>{
-
-  // Consuming
-  await consumer.connect()
-
-}
-
 run().catch(console.error)
