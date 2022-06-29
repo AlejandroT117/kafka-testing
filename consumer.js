@@ -11,7 +11,7 @@ const run = async () => {
 
   // Consuming
   await consumer.connect()
-  await consumer.subscribe({ topic: 'animals', fromBeginning: true })
+  await consumer.subscribe({ topic: 'PatientAddedEvent', fromBeginning: true })
 
   await consumer.run({
     eachMessage: async ({ topic, partition, message }) => {
